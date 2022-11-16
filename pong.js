@@ -91,13 +91,9 @@ function oponente(){
         velocidadeOponente *= -1;
     }
     
-    if (Math.abs(yOponente - yBola) > (1)){
-        velocidadeOponente *= velocidadeYBola/(Math.abs(velocidadeYBola));
-    }
-
-    /*else    if( yOponente + heightRaquete > yBola + 100){
+    if( yOponente + heightRaquete > yBola + 100){
         velocidadeOponente *= -1
-    }*/
+    }
 
     if( xBola + raio > xOponente && yBola + raio && yBola + raio > yOponente && yBola - raio < yOponente + heightRaquete){
         velocidadeXBola *= -1;
